@@ -1,0 +1,11 @@
+# Build folders
+Debug/
+Release/
+.vscode/
+.mxproject/
+Binaries/
+Includes/
+Startup/
+Drivers/
+Middlewares/
+.ioc
