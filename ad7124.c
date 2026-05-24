@@ -373,13 +373,13 @@ int internalCalibration(uint8_t ch)
 	  if (ret < 0) {
 	    return ret;
 	  }
-	  ret = setAdcControl(InternalGainCalibrationMode, FullPower, true, InternalClk);			/* full scale */
+	  ret = setAdcControl(InternalGainCalibrationMode, MidPower, true, InternalClk);			/* full scale */
 	  ret = waitEndOfConversion(1000);
 	  if (ret < 0) {
 	    return ret;
 	  }
 
-	  ret = setAdcControl(InternalOffsetCalibrationMode, FullPower, true, InternalClk);			/* zero scale */
+	  ret = setAdcControl(InternalOffsetCalibrationMode, MidPower, true, InternalClk);			/* zero scale */
 
 	  ret = waitEndOfConversion(1000);
 	  if (ret < 0) {
