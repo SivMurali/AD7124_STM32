@@ -30,7 +30,7 @@ To communicate with the AD7124, configure your SPI peripheral in STM32CubeMX wit
 - **Chip Select (NSS):** Software-controlled (set CS pins manually as GPIO outputs)
 
 ### 2. Upstream Peripheral Naming
-By default, the driver communicates using the `hspi4` SPI handle and expects CS pins configured with the prefixes `SPI1_CS_Pin`/`SPI1_CS_GPIO_Port` through `SPI5_CS_Pin`/`SPI5_CS_GPIO_Port` in `main.h`.
+By default, the driver communicates using the `hspi4` SPI handle and expects CS pins configured with the prefixes `SPI4_CS_Pin`/`SPI4_CS_GPIO_Port` in `main.h`.
 
 *If your STM32 project uses a different SPI peripheral (e.g., SPI1 or SPI2), declare your own handle in `main.h` or modify `ad7124-driver.h` / `ad7124-driver.c` to bind to your specific peripheral handle (e.g., `&hspi1`).*
 
