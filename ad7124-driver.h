@@ -13,7 +13,6 @@
 extern SPI_HandleTypeDef hspi4;
 
 // Inside ad7124-driver.h
-#define AD7124_SPI_HANDLE    hspi4
 #define AD7124_CS_PORT       SPI4_CS_GPIO_Port
 #define AD7124_CS_PIN        SPI4_CS_Pin
 
