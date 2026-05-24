@@ -11,7 +11,6 @@
 #define INC_AD7124_H_
 
 #include "ad7124-driver.h"
-#include "tcp.h"
 #include <stdint.h>
 
 #define REG_NO 58
