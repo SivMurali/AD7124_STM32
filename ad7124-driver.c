@@ -18,13 +18,13 @@ Ad7124Register reg[Reg_No];
 
 static void setss()
 {
-			HAL_GPIO_WritePin(SPI4_CS_GPIO_Port, SPI4_CS_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(AD7124_CS_PORT, AD7124_CS_PIN, GPIO_PIN_RESET);
 }
 
 static void clearSS()
 {
     // Deselect the AD7124 (pull CS high)
-			HAL_GPIO_WritePin(SPI4_CS_GPIO_Port, SPI4_CS_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(AD7124_CS_PORT, AD7124_CS_PIN, GPIO_PIN_SET);
 }
 
 
